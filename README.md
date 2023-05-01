@@ -1,0 +1,2 @@
+# FCSTORE
+Global Page
