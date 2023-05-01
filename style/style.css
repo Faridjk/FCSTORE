@@ -6,6 +6,9 @@
 .dropdown:hover .dropdown-menu{
     display: block;
 }
+.boxitem1{
+    margin: 0 30px;
+}
 form{
     position: relative;
     color: orange;
@@ -73,14 +76,36 @@ input:hover {
     letter-spacing: 2px;
 }
 .card{
-    width: 60%;
+    width: 65%;
     margin-bottom: 30px;
+}
+.search1{
+    width: 50%;
 }
 @media(max-width:550px) {
     .card{
         width: 90%;
     }
+    .maqazin:hover{
+        transform: scale(1);
+    }
+    
 }
+@media(max-width:768px) {
+    
+    .search1{
+        width: 100%;
+    }
+}
+@media(max-width:990px) {
+    .search1{
+        width: 100%;
+    }
+    .boxitem1{
+        margin: 0;
+    }
+}
+
 .hero{
     z-index: 2;
     background-image: url(style.webp);
