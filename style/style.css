@@ -51,11 +51,11 @@ input:hover {
     cursor: pointer;
 }
 .slider_1{
-    margin: 50px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
+    padding: 30px;
 }
 .image{
     position: relative;
@@ -82,6 +82,16 @@ input:hover {
 .search1{
     width: 50%;
 }
+.bx-chevron-left,
+.bx-chevron-right{
+    font-size: 45px;
+    color: white;
+    background-color: orange;
+    border-radius: 100px;
+}
+.clothbtn{
+    font-size: 60px;
+}
 @media(max-width:550px) {
     .card{
         width: 90%;
@@ -92,7 +102,9 @@ input:hover {
     
 }
 @media(max-width:768px) {
-    
+    .clothbtn{
+        font-size: 45px;
+    }
     .search1{
         width: 100%;
     }
