@@ -59,16 +59,7 @@
     .maqazin:hover{
         transform: scale(1);
     }
-    .aboutsekil>img{
-        width: 97%;
-        justify-content: center;
-        display: flex;
-    }
-    .aboutsekil{
-        justify-content: center;
-        display: flex;
-        padding: 0;
-    }
+    
 }
 @media(max-width:768px) {
     .clothbtn{
@@ -98,15 +89,7 @@
     position: relative;
     background-position: center;
 }
-.aboutsekil{
-    display: flex;
-    justify-content: end;
-    width: 70%;
-    padding-right: 50px;
-}
-.aboutyazi{
-    padding: 50px;
-}
+
 .overlay{
     position: absolute;
     background-color: yellow;
