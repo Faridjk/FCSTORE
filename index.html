@@ -6,478 +6,368 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FCSTORE</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1 class="display-6">FC<span style="color: orange;">STORE</span></h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex ms-auto search1" role="search">
-                    <input class="form-control me-2" placeholder="What are you looking for?">
-                    <i class='bx bx-search-alt-2'></i>
-                </form>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="style/user.png" height="20px" alt="">
-                            <span>Profile</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><span class="dropdown-item" style="cursor: pointer;">Purchase</span></li>
-                          <li><a class="dropdown-item" style="cursor: pointer;">My orders</a></li>
-                          <li><a class="dropdown-item" style="cursor: pointer;">Wallet</a></li>
-                        </ul>
-                      </li>
-                    <li class="nav-item boxitem1 d-flex align-items-center">
-                        <i class='bx bx-heart' style="font-size: 25px;"></i>
-                        <a class="nav-link" href="#">Favourites</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <img src="style/storecar.png" height="20px" alt="">
-                        <a class="nav-link" href="#">Cart</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#"><h2>Per<span style="color: orange;">fume</span></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#brand">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#men">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#women">Women</a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
-    </nav>
-    <section id="home" class="mt-5" >
+      </nav>
+    <section id="home" style="margin: 80px 0;">
+        <h1 class="text-center display-1 mt-3" style="letter-spacing: 6px;">Parfume</h1>
         <div class="container">
-            <div class="row"data-aos="zoom-in">
+            <div class="row">
                 <div class="col-md-4 mb-3">
-                    <img class="w-100" src="style/reklam3.webp" alt="">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <img class="w-100" src="style/reklam1.webp" alt="">
-                </div>
-                <div class="col-md-4 mb-3">
-                    <img class="w-100" src="style/reklma2.webp" alt="">
-                </div>
-            </div>
-            <div id="carouselExample" class="carousel slide"  data-aos="zoom-in">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-2 col-md-4 col-sm-6  slider_1">
-                                <img src="style/nike.webp"  alt="...">
-                                <h6 class="mt-2">Nike</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6  slider_1">
-                                <img src="style/adidas.webp"  alt="...">
-                                <h6 class="mt-2">Adidas</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6  slider_1">
-                                <img src="style/north.svg"  alt="...">
-                                <h6 class="mt-2">Northern Face</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6  slider_1">
-                                <img src="style/puma.png"  alt="...">
-                                <h6 class="mt-2">Puma</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6  slider_1">
-                                <img src="style/pullbear.png"  alt="...">
-                                <h6 class="mt-2">Pull&Bear</h6>
-                            </div>
+                    <div class="kartlar">
+                        <img class="w-100" height="350px" src="style/bleu.jpg" alt="">
+                        <div class="overlay1">
+                            <h3>Bleu de Chanel</h1>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center" data-aos="zoom-in">
-                            <div class="col-lg-2 col-md-4 col-sm-6 slider_1">
-                                <img src="style/gucci.png" class="d-block" alt="...">
-                                <h6 class="mt-2">Gucci</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 slider_1">
-                                <img src="style/koton.jpg" class="d-block" alt="...">
-                                <h6 class="mt-2">Koton</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 slider_1">
-                                <img src="style/defacto.avif" class="d-block" alt="...">
-                                <h6 class="mt-2">DeFacto</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 slider_1">
-                                <img src="style/chanel.jpg" class="d-block" alt="...">
-                                <h6 class="mt-2">Chanel</h6>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 slider_1">
-                                <img src="style/new.png" class="d-block" alt="...">
-                                <h6 class="mt-2">New Balance</h6>
-                            </div>
+
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="kartlar">
+                        <img class="w-100" height="350px" src="style/parfume1.jpg" alt="">
+                        <div class="overlay1">
+                            <h3>Dior Sauvage</h3>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span aria-hidden="true shadow">
-                        <i class='bx bx-chevron-left'></i>
-                    </span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span aria-hidden="true">
-                        <span  aria-hidden="true">
-                            <span  aria-hidden="true">
-                                <i class='bx bx-chevron-right shadow'></i>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col-md-4 mb-3">
+                    <div class="kartlar">
+                        <img class="w-100" height="350px" src="style/dodge.jpg" alt="">
+                        <div class="overlay1">
+                            <h3>Hypnotic Poison</h3>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
     <section id="about">
         <div class="container">
-            <div class="row text-center"  data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-5 aboutsekil">
+                    <img src="style/perfumeinfo.jpg" alt="" >
+                </div>
+                <div class="col-lg-6 text-center aboutyazi">
+                    <h1 class="display5">About</h1>
+                    <p style="border-bottom: 3px solid orange;" class="pb-4">Perfume (UK: /ˈpɜːfjuːm/, US: /pərˈfjuːm/; French: parfum) is a mixture of fragrant essential oils or aroma compounds (fragrances), fixatives and solvents, usually in liquid form, used to give the human body, animals, food, objects, and living-spaces an agreeable scent. Perfumes can be defined as substances that emit and diffuse a pleasant and fragrant odor. They consist of manmade mixtures of aromatic chemicals and essential oils. The 1939 Nobel Laureate for Chemistry, Leopold Ružička stated in 1945 that "right from the earliest days of scientific chemistry up to the present time, perfumes have substantially contributed to the development of organic chemistry as regards methods, systematic classification, and theory."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="brand">
+        <div class="container">
+            <div class="row text-center">
                 <div class="col-12">
-                    <h1 class="display-1 mb-5">Our stores</h1>
+                    <h1 class="display-1 mb-5">Offers</h1>
                 </div>
             </div>
-            <div class="row justify-content-center"  data-aos="fade-up">
-                <div class="col-md-4 mb-3 maqazin">
+            <div class="row justify-content-center">
+                <div class="col-md-3 mb-3">
                     <div class="image">
-                        <img height="250px" src="style/sport.jfif" class="w-100" alt="">
-
+                        <img height="250px" src="style/boss.avif" class="w-100" alt="">
                         <div class="texth6kart text-center">
-                            <h6 class="py-2 fw-bold">Sport & outdoor</h6>
+                            <h6 class="py-2 fw-bold">New</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3 maqazin">
+                <div class="col-md-3 mb-3">
                     <div class="image">
-                        <img height="250px" src="style/furniture.jfif" class="w-100" alt="">
-
+                        <img height="250px" src="style/luxury.jpg" class="w-100" alt="">
                         <div class="texth6kart text-center">
-                            <h6 class="py-2 fw-bold">Furniture</h6>
+                            <h6 class="py-2 fw-bold">Luxury</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3 maqazin">
+                <div class="col-md-3 mb-3">
                     <div class="image">
-                        <img height="250px" src="style/sporteq.jfif" class="w-100" alt="">
-
+                        <img height="250px" src="style/popular.webp" class="w-100" alt="">
                         <div class="texth6kart text-center">
-                            <h6 class="py-2 fw-bold">Sport equipment</h6>
+                            <h6 class="py-2 fw-bold">The most popular</h6>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center"  data-aos="fade-up">
-                <div class="col-md-4 mb-3 maqazin">
+                <div class="col-md-3 mb-3">
                     <div class="image">
-                        <img height="250px" src="style/car.jpg" class="w-100" alt="">
-
+                        <img height="250px" src="style/creedaventus.webp" class="w-100" alt="">
                         <div class="texth6kart text-center">
-                            <h6 class="py-2 fw-bold">Cars</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 maqazin">
-                    <div class="image">
-                        <img height="250px" src="style/wedding.jfif" class="w-100" alt="">
-
-                        <div class="texth6kart text-center">
-                            <h6 class="py-2 fw-bold">Wedding clothes</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 maqazin">
-                    <div class="image">
-                        <img height="250px" src="style/nikestore.jfif" class="w-100" alt="">
-
-                        <div class="texth6kart text-center">
-                            <h6 class="py-2 fw-bold">Brand stores</h6>
+                            <h6 class="py-2 fw-bold">The most sold</h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="clothes" style="margin: 70px 0;">
-        <h1 class="display-1 text-center">T-shirts</h1>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-                <div class="carousel-item active justify-content-center d-flex">
-                    <div class="row py-4"  data-aos="fade-up">
-                        <div class="col-md-6 col-lg-3  col-sm-6  d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth1.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> Siyah Bisiklet Yaka %100 Pamuk Basic
-                                        T-Shirt E001000</span>
-                                    <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-                                </div>
+    <section id="men" style="margin: 70px 0;">
+        <h1 class="display-1 text-center px-2">Perfume for men</h1>
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/ralphlauren.webp" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Ralph Lauren <br></strong>Romance Eau de
+                                    Perfume</span>
+                                <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth2.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> Beyaz Bisiklet Yaka %100 Pamuk Basic</span>
-                                    <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/gucci.jfif" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Gucci <br></strong> Guilty Eau de Toilette</span>
+                                <h4 class="mt-4"><del>125$</del> <span class="h4" style="color: red;">75$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth3.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> Siyah Polo Yaka Slim Fit %100 Pamuk
-                                        Basic T-Shirt</span>
-                                    <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
+                        
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/fahrenheit.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Dior</strong><br> Dior Fahrenheit</span>
+                                <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth4.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> GRIMELANGE Project Oversize Beyaz
-                                        T-shirt</span>
-                                    <h4 class="mt-4"><del>125$</del> <span class="h4" style="color: red;">75$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/lancome.jfif" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Lancome</strong> La Vie Est Belle L'Eau de Parfum
+                                </span>
+                                <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" width="100%" src="style/blackocid.jpg" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Tom Ford</strong> <br>Tom Ford's black orchid</span>
+                                <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/bb.jfif" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Byredo</strong><br> Bibliothèque</span>
+                                <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/ralp.webp" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Ralph Lauren</strong><br> Club Eau de Parfum</span>
+                                <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" src="style/versace.webp" class="card-img-top p-3" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Versace</strong> <br> Versace Eros Cologne</span>
+                                <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item d-flex justify-content-center">
-                    <div class="row py-4"  data-aos="fade-up">
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth5.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> Siyah Bisiklet Yaka %100 Pamuk Basic
-                                        T-Shirt E001000</span>
-                                    <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth6.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> Beyaz Bisiklet Yaka %100 Pamuk Basic
-                                        T-Shirt E001000</span>
-                                    <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth7.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> Siyah Polo Yaka Slim Fit %100 Pamuk
-                                        Basic T-Shirt</span>
-                                    <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                            <div class="card shadow">
-                                <img src="style/cloth8.webp" class="card-img-top p-3" alt="...">
-                                <div class="card-body">
-                                    <span class="card-text"><strong>Avva</strong> GRIMELANGE Project Oversize Beyaz
-                                        T-shirt</span>
-                                    <h4 class="mt-4"><del>125$</del> <span class="h4" style="color: red;">75$</span>
-                                    </h4>
-                                    <div class="btn btn-warning">Buy now</div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span aria-hidden="true">
-                        <i class='bx bx-chevron-left clothbtn'></i>
-                    </span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <i class='bx bx-chevron-right shadow clothbtn'></i>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <div class="container-fluid hero vh-100 align-items-center d-flex justify-content-center"  data-aos="fade-up">
+        </div>
+            <div class="container-fluid hero vh-100 align-items-center d-flex justify-content-center">
                 <div class="row">
                     <div class="col-11 mx-auto">
                         <div class="overlay"></div>
                         <div class="col-12 text-center ">
-                            <h1 class="text-white display-1"  data-aos="zoom-in">Our new collection is up!</h1>
+                            <h1 class="text-white display-1">Our new collection is up!</h1>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-    </section>
-    <section id="continue"  data-aos="fade-up">
-        <h1 class="display-1 text-center mb-5">Shoes</h1>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row py-4">
-                    <div class="col-md-6 col-lg-3  col-sm-6  d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross1.webp" class="card-img-top p-3" alt="...">
+
+    </section> 
+    <section id="women">
+        <h1 class="display-1 text-center mb-5">Perfume for Women</h1>
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card shadow card2">
+                            <img height="300px" width="100%" src="style/bella.jpg" alt="...">
                             <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> Siyah Bisiklet Yaka %100 Pamuk Basic
-                                    T-Shirt E001000</span>
+                                <span class="card-text"><strong>Bella vita <br></strong> Bella vita organic</span>
+                                <h4 class="mt-4"><del>125$</del> <span class="h4" style="color: red;">75$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow card2">
+                            <img height="300px" width="100%" src="style/blackocid.jpg" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Tom Ford</strong> <br>Tom Ford's black orchid</span>
+                                <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <div class="img-wrapper">
+                                <img height="300px" width="100%" src="style/no parfume.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <span class="card-text"><strong>Chanel</strong> <br>Chanel no5 </span>
+                                <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow card2">
+                            <img height="300px" width="100%" src="style/maison.webp" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Baccarat</strong><br> Rouge 540 Maison Francis Kurkdjian
+                                </span>
                                 <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
                                 </h4>
                                 <div class="btn btn-warning">Buy now</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross2.webp" class="card-img-top p-3" alt="...">
+                    <div class="item mb-4">
+                        <div class="card shadow ">
+                            <img height="300px" width="100%" src="style/frederic.jpg" alt="...">
                             <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> Beyaz Bisiklet Yaka %100 Pamuk Basic</span>
+                                <span class="card-text"><strong>Frederic Malle</strong><br> Frederic Malle Portrait of a
+                                    Lady</span>
                                 <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
                                 </h4>
                                 <div class="btn btn-warning">Buy now</div>
-
+    
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross3.webp" class="card-img-top p-3" alt="...">
+                    <div class="item mb-4">
+                        <div class="card shadow card2">
+                            <img height="300px" width="100%" src="style/missdior.webp" alt="...">
                             <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> Siyah Polo Yaka Slim Fit %100 Pamuk
-                                    Basic T-Shirt</span>
-                                <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
-                                </h4>
-                                <div class="btn btn-warning">Buy now</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross4.webp" class="card-img-top p-3" alt="...">
-                            <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> GRIMELANGE Project Oversize Beyaz
-                                    T-shirt</span>
+                                <span class="card-text"><strong>Dior</strong><br>Miss Dior</span>
                                 <h4 class="mt-4"><del>125$</del> <span class="h4" style="color: red;">75$</span>
                                 </h4>
                                 <div class="btn btn-warning">Buy now</div>
-
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow">
+                            <img height="300px" width="100%" src="style/carolina.jpg" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Carolina Herreira</strong><br> Carolina Herreira Good
+                                    Girl</span>
+                                <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-4">
+                        <div class="card shadow border-0">
+                            <img height="300px" width="100%" src="style/fogg.jfif" alt="...">
+                            <div class="card-body">
+                                <span class="card-text"><strong>Fogg</strong> <br>Fogg make my day</span>
+                                <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
+                                </h4>
+                                <div class="btn btn-warning">Buy now</div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row py-4">
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross5.webp" class="card-img-top p-3" alt="...">
-                            <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> Siyah Bisiklet Yaka %100 Pamuk Basic
-                                    T-Shirt E001000</span>
-                                <h4 class="mt-4"><del>200$</del> <span class="h4" style="color: red;">150$</span>
-                                </h4>
-                                <div class="btn btn-warning">Buy now</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross6.webp" class="card-img-top p-3" alt="...">
-                            <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> Beyaz Bisiklet Yaka %100 Pamuk Basic
-                                    T-Shirt E001000</span>
-                                <h4 class="mt-4"><del>100$</del> <span class="h4" style="color: red;">50$</span>
-                                </h4>
-                                <div class="btn btn-warning">Buy now</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross7.webp" class="card-img-top p-3" alt="...">
-                            <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> Siyah Polo Yaka Slim Fit %100 Pamuk
-                                    Basic T-Shirt</span>
-                                <h4 class="mt-4"><del>175$</del> <span class="h4" style="color: red;">125$</span>
-                                </h4>
-                                <div class="btn btn-warning">Buy now</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3  col-sm-6 d-flex justify-content-center align-items-center">
-                        <div class="card shadow">
-                            <img src="style/kross8.webp" class="card-img-top p-3" alt="...">
-                            <div class="card-body">
-                                <span class="card-text"><strong>Avva</strong> GRIMELANGE Project Oversize Beyaz
-                                    T-shirt</span>
-                                <h4 class="mt-4"><del>125$</del> <span class="h4" style="color: red;">75$</span>
-                                </h4>
-                                <div class="btn btn-warning">Buy now</div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span  aria-hidden="true">
-                <i class='bx bx-chevron-left clothbtn'></i>
-              </span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span aria-hidden="true">
-                <i class='bx bx-chevron-right shadow clothbtn'></i>
-              </span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>    
+        </div>
     </section>
-    <footer class="bg-dark text-white"  data-aos="fade-up">
+    
+    <footer class="bg-dark text-white">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-4 mt-3 text-center">
                     <h4 style="color: orange;">FCSTORE</h4>
-                    <p>FCSTORE, merkezi İstanbul’da bulunan bir e-ticaret pazar yeri. FCSTORE, 2010’da giyim ürünleri satışı yapılan bir alışveriş sitesi olarak kuruldu. Büyümesine paralel sunduğu ürün ve hizmetleri genişleterek pazar yeri formatına dönüşen sitede; moda, elektronik, ev ve mobilya, gıda, anne-çocuk, kozmetik gibi birçok kategoride satış yapmaya başladı.</p>
+                    <p>FCSTORE, merkezi İstanbul’da bulunan bir e-ticaret pazar yeri. FCSTORE, 2010’da giyim ürünleri
+                        satışı yapılan bir alışveriş sitesi olarak kuruldu. Büyümesine paralel sunduğu ürün ve
+                        hizmetleri genişleterek pazar yeri formatına dönüşen sitede; moda, elektronik, ev ve mobilya,
+                        gıda, anne-çocuk, kozmetik gibi birçok kategoride satış yapmaya başladı.</p>
                 </div>
                 <div class="col-md-4 mt-3 text-center">
                     <h4 style="color: orange;">About us</h4>
@@ -492,19 +382,40 @@
                     <h6>Live help</h6>
                     <h6>How can I help</h6>
                     <i style="font-size: 30px; color: orange;" class='bx bxl-whatsapp'></i>
-                    <i style="font-size: 30px; color: orange;" class='bx bxl-facebook' ></i>
-                    <i style="font-size: 30px; color: orange;" class='bx bxl-instagram' ></i>
-                    <i style="font-size: 30px; color: orange;" class='bx bxl-twitter' ></i>
+                    <i style="font-size: 30px; color: orange;" class='bx bxl-facebook'></i>
+                    <i style="font-size: 30px; color: orange;" class='bx bxl-instagram'></i>
+                    <i style="font-size: 30px; color: orange;" class='bx bxl-twitter'></i>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        AOS.init();
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 80,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
     </script>
 </body>
+
 </html>

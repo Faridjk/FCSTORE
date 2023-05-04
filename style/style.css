@@ -3,37 +3,6 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-.boxitem1{
-    margin: 0 30px;
-}
-form{
-    position: relative;
-    color: orange;
-}
-input:hover {
-    border: 3px solid orange;
-}
-.bx-search-alt-2:hover,
-.nav-item>img{
-    cursor: pointer;
-}
-.bx-search-alt-2{
-    position: absolute;
-    right: 3%;
-    top: 15%;
-    font-size: 25px;
-}
-.nav-item>a:hover{
-    color: orange;
-
-}
-.nav-item{
-    font-size: 17px;
-}
-
 .slider_1>img{
     border: 1px solid black;
     padding: 5px;
@@ -67,16 +36,9 @@ input:hover {
     transform: scale(1.1);
     transition: 0.4;
 }
-.texth6kart{
-    background-color: orange;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    letter-spacing: 2px;
-}
-.card{
-    width: 65%;
+
+.card1{
+    width: 80%;
     margin-bottom: 30px;
 }
 .search1{
@@ -92,20 +54,30 @@ input:hover {
 .clothbtn{
     font-size: 60px;
 }
+
 @media(max-width:550px) {
-    .card{
-        width: 90%;
-    }
     .maqazin:hover{
         transform: scale(1);
     }
-    
+    .aboutsekil>img{
+        width: 97%;
+        justify-content: center;
+        display: flex;
+    }
+    .aboutsekil{
+        justify-content: center;
+        display: flex;
+        padding: 0;
+    }
 }
 @media(max-width:768px) {
     .clothbtn{
-        font-size: 45px;
+        font-size: 40px;
     }
     .search1{
+        width: 100%;
+    }
+    .card2{
         width: 100%;
     }
 }
@@ -120,10 +92,20 @@ input:hover {
 
 .hero{
     z-index: 2;
-    background-image: url(style.webp);
-    background-attachment: fixed;
+    background-image: url(chooseus.webp);
     background-size: cover;
+    background-attachment:fixed;
     position: relative;
+    background-position: center;
+}
+.aboutsekil{
+    display: flex;
+    justify-content: end;
+    width: 70%;
+    padding-right: 50px;
+}
+.aboutyazi{
+    padding: 50px;
 }
 .overlay{
     position: absolute;
@@ -134,4 +116,58 @@ input:hover {
     left: 0;
     top: 0;
     background-color: rgba(255, 238, 2, 0.5);
+}
+.kartlar{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.kartlar img{
+    transition: 0.4s;
+}
+.kartlar:hover img{
+    transform: scale(1.1);
+}
+.overlay1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(35, 35, 37, 0.8);
+    transition: 0.4s;
+    opacity: 0;
+    color: white;
+}
+.overlay1>h3{
+    border-top: 3px solid white;
+    display: inline;
+    padding-top: 5px;
+}
+.overlay1:hover{
+    opacity: 1;
+}
+.image .img{
+    transition: 0.4s;
+}
+.image:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.texth6kart{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: 0.4s;
+    letter-spacing: 2px;
 }
