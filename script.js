@@ -27,3 +27,18 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     });
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const second = document.querySelectorAll('.secondcard');
+    second.forEach(items => {
+        items.addEventListener('touchmove', (event) => {
+            event.preventDefault();
+            const image = document.querySelectorAll('.image');
+            image.forEach(box => {
+                box.classList.add('image img');
+                box.classList.add('image');
+                box.classList.add('image:hover img');
+            });
+        })
+    });
+})
